@@ -1,0 +1,56 @@
+==== Program initialised with values - Threads: 1 VectorLength: 10000000 ====
+
+Duration in seconds:	0.064057653
+Performance:		15.610937228686788
+==== Program initialised with values - Threads: 2 VectorLength: 10000000 ====
+
+Duration in seconds:	0.042487289
+Performance:		23.53645110188132
+==== Program initialised with values - Threads: 3 VectorLength: 10000000 ====
+
+Duration in seconds:	0.046556394
+Performance:		21.4793267708835
+==== Program initialised with values - Threads: 4 VectorLength: 10000000 ====
+
+Duration in seconds:	0.037937407
+Performance:		26.359207944812887
+==== Program initialised with values - Threads: 5 VectorLength: 10000000 ====
+
+Duration in seconds:	0.033999901
+Performance:		29.41185034627013
+==== Program initialised with values - Threads: 6 VectorLength: 10000000 ====
+
+Duration in seconds:	0.031272157
+Performance:		31.977327307483137
+==== Program initialised with values - Threads: 7 VectorLength: 10000000 ====
+
+Duration in seconds:	0.02936375
+Performance:		34.055595760078326
+==== Program initialised with values - Threads: 8 VectorLength: 10000000 ====
+
+Duration in seconds:	0.030364636
+Performance:		32.93304750960954
+==== Program initialised with values - Threads: 12 VectorLength: 10000000 ====
+
+Duration in seconds:	0.028798533
+Performance:		34.723990975512535
+==== Program initialised with values - Threads: 16 VectorLength: 10000000 ====
+
+Duration in seconds:	0.031082558
+Performance:		32.17238426772983
+==== Program initialised with values - Threads: 20 VectorLength: 10000000 ====
+
+Duration in seconds:	0.030575289
+Performance:		32.70615038176745
+==== Program initialised with values - Threads: 24 VectorLength: 10000000 ====
+
+Duration in seconds:	0.030323162
+Performance:		32.978091137065455
+==== Program initialised with values - Threads: 28 VectorLength: 10000000 ====
+
+Duration in seconds:	0.035772758
+Performance:		27.954232659388463
+==== Program initialised with values - Threads: 32 VectorLength: 10000000 ====
+
+Duration in seconds:	0.037377083
+Performance:		26.75436175690864

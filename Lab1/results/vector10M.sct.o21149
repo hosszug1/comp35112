@@ -1,0 +1,56 @@
+==== Program initialised with values - Threads: 1 VectorLength: 10000000 ====
+
+Duration in seconds:	0.074088868
+Performance:		13.49730434537075
+==== Program initialised with values - Threads: 2 VectorLength: 10000000 ====
+
+Duration in seconds:	0.042409746
+Performance:		23.5794857153825
+==== Program initialised with values - Threads: 3 VectorLength: 10000000 ====
+
+Duration in seconds:	0.047096681
+Performance:		21.232918727330276
+==== Program initialised with values - Threads: 4 VectorLength: 10000000 ====
+
+Duration in seconds:	0.037828701
+Performance:		26.434954771510657
+==== Program initialised with values - Threads: 5 VectorLength: 10000000 ====
+
+Duration in seconds:	0.035488707
+Performance:		28.177977856448813
+==== Program initialised with values - Threads: 6 VectorLength: 10000000 ====
+
+Duration in seconds:	0.032495532
+Performance:		30.773461410017845
+==== Program initialised with values - Threads: 7 VectorLength: 10000000 ====
+
+Duration in seconds:	0.03550015
+Performance:		28.168895061006783
+==== Program initialised with values - Threads: 8 VectorLength: 10000000 ====
+
+Duration in seconds:	0.032872297
+Performance:		30.420752161006575
+==== Program initialised with values - Threads: 12 VectorLength: 10000000 ====
+
+Duration in seconds:	0.032570699
+Performance:		30.702442093735844
+==== Program initialised with values - Threads: 16 VectorLength: 10000000 ====
+
+Duration in seconds:	0.031452963
+Performance:		31.793507021898062
+==== Program initialised with values - Threads: 20 VectorLength: 10000000 ====
+
+Duration in seconds:	0.032310103
+Performance:		30.95007156120796
+==== Program initialised with values - Threads: 24 VectorLength: 10000000 ====
+
+Duration in seconds:	0.031262465
+Performance:		31.987240929338103
+==== Program initialised with values - Threads: 28 VectorLength: 10000000 ====
+
+Duration in seconds:	0.03272574
+Performance:		30.55698664109658
+==== Program initialised with values - Threads: 32 VectorLength: 10000000 ====
+
+Duration in seconds:	0.031906931
+Performance:		31.341152804699394

@@ -1,0 +1,56 @@
+==== Program initialised with values - Threads: 1 VectorLength: 1000000 ====
+
+Duration in seconds:	0.01295167
+Performance:		77.21012039374072
+==== Program initialised with values - Threads: 2 VectorLength: 1000000 ====
+
+Duration in seconds:	0.011460673
+Performance:		87.25491077181943
+==== Program initialised with values - Threads: 3 VectorLength: 1000000 ====
+
+Duration in seconds:	0.01250327
+Performance:		79.97907747333298
+==== Program initialised with values - Threads: 4 VectorLength: 1000000 ====
+
+Duration in seconds:	0.012021013
+Performance:		83.18766479996319
+==== Program initialised with values - Threads: 5 VectorLength: 1000000 ====
+
+Duration in seconds:	0.011919508
+Performance:		83.89608027445428
+==== Program initialised with values - Threads: 6 VectorLength: 1000000 ====
+
+Duration in seconds:	0.011931872
+Performance:		83.80914579036718
+==== Program initialised with values - Threads: 7 VectorLength: 1000000 ====
+
+Duration in seconds:	0.011794138
+Performance:		84.78788360794151
+==== Program initialised with values - Threads: 8 VectorLength: 1000000 ====
+
+Duration in seconds:	0.013087418
+Performance:		76.40926575432985
+==== Program initialised with values - Threads: 12 VectorLength: 1000000 ====
+
+Duration in seconds:	0.012826696
+Performance:		77.96239967018786
+==== Program initialised with values - Threads: 16 VectorLength: 1000000 ====
+
+Duration in seconds:	0.014275179
+Performance:		70.05166099843652
+==== Program initialised with values - Threads: 20 VectorLength: 1000000 ====
+
+Duration in seconds:	0.014056502
+Performance:		71.14145468054569
+==== Program initialised with values - Threads: 24 VectorLength: 1000000 ====
+
+Duration in seconds:	0.01556839
+Performance:		64.23271770555594
+==== Program initialised with values - Threads: 28 VectorLength: 1000000 ====
+
+Duration in seconds:	0.017666576
+Performance:		56.60406408123453
+==== Program initialised with values - Threads: 32 VectorLength: 1000000 ====
+
+Duration in seconds:	0.018199262
+Performance:		54.94728302719088

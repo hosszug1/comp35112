@@ -1,0 +1,42 @@
+==== Program initialised with values - Threads: 1 VectorLength: 100000000 ====
+
+Total duration: 680467820
+==== Program initialised with values - Threads: 2 VectorLength: 100000000 ====
+
+Total duration: 357317506
+==== Program initialised with values - Threads: 3 VectorLength: 100000000 ====
+
+Total duration: 389282989
+==== Program initialised with values - Threads: 4 VectorLength: 100000000 ====
+
+Total duration: 303066120
+==== Program initialised with values - Threads: 5 VectorLength: 100000000 ====
+
+Total duration: 244929758
+==== Program initialised with values - Threads: 6 VectorLength: 100000000 ====
+
+Total duration: 226590186
+==== Program initialised with values - Threads: 7 VectorLength: 100000000 ====
+
+Total duration: 207579277
+==== Program initialised with values - Threads: 8 VectorLength: 100000000 ====
+
+Total duration: 239010556
+==== Program initialised with values - Threads: 12 VectorLength: 100000000 ====
+
+Total duration: 250997555
+==== Program initialised with values - Threads: 16 VectorLength: 100000000 ====
+
+Total duration: 270691663
+==== Program initialised with values - Threads: 20 VectorLength: 100000000 ====
+
+Total duration: 271509345
+==== Program initialised with values - Threads: 24 VectorLength: 100000000 ====
+
+Total duration: 285232279
+==== Program initialised with values - Threads: 28 VectorLength: 100000000 ====
+
+Total duration: 258952588
+==== Program initialised with values - Threads: 32 VectorLength: 100000000 ====
+
+Total duration: 283816918

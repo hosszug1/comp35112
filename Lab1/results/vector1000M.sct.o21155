@@ -1,0 +1,56 @@
+==== Program initialised with values - Threads: 1 VectorLength: 1000000000 ====
+
+Duration in seconds:	3.912272407
+Performance:		0.25560592309747104
+==== Program initialised with values - Threads: 2 VectorLength: 1000000000 ====
+
+Duration in seconds:	3.5039236
+Performance:		0.2853943504932585
+==== Program initialised with values - Threads: 3 VectorLength: 1000000000 ====
+
+Duration in seconds:	3.827536705
+Performance:		0.2612646401780228
+==== Program initialised with values - Threads: 4 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.880817793
+Performance:		0.3471236544115583
+==== Program initialised with values - Threads: 5 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.377878203
+Performance:		0.42054298606983787
+==== Program initialised with values - Threads: 6 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.082460237
+Performance:		0.4802012457345182
+==== Program initialised with values - Threads: 7 VectorLength: 1000000000 ====
+
+Duration in seconds:	1.975775248
+Performance:		0.5061304422212298
+==== Program initialised with values - Threads: 8 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.135965618
+Performance:		0.46817232991622054
+==== Program initialised with values - Threads: 12 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.16357075
+Performance:		0.4621988904222337
+==== Program initialised with values - Threads: 16 VectorLength: 1000000000 ====
+
+Duration in seconds:	1.978207054
+Performance:		0.5055082570744892
+==== Program initialised with values - Threads: 20 VectorLength: 1000000000 ====
+
+Duration in seconds:	1.972070552
+Performance:		0.5070812496976022
+==== Program initialised with values - Threads: 24 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.002218104
+Performance:		0.49944608831685994
+==== Program initialised with values - Threads: 28 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.091178174
+Performance:		0.47819932917872926
+==== Program initialised with values - Threads: 32 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.178743068
+Performance:		0.458980232542041

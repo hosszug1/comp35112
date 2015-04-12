@@ -1,0 +1,56 @@
+==== Program initialised with values - Threads: 1 VectorLength: 100000000 ====
+
+Duration in seconds:	0.66703317
+Performance:		1.499175820596748
+==== Program initialised with values - Threads: 2 VectorLength: 100000000 ====
+
+Duration in seconds:	0.357562633
+Performance:		2.7967128209395415
+==== Program initialised with values - Threads: 3 VectorLength: 100000000 ====
+
+Duration in seconds:	0.411568281
+Performance:		2.4297304874181984
+==== Program initialised with values - Threads: 4 VectorLength: 100000000 ====
+
+Duration in seconds:	0.296291725
+Performance:		3.3750520707252285
+==== Program initialised with values - Threads: 5 VectorLength: 100000000 ====
+
+Duration in seconds:	0.246668599
+Performance:		4.0540222957199346
+==== Program initialised with values - Threads: 6 VectorLength: 100000000 ====
+
+Duration in seconds:	0.228584608
+Performance:		4.374747752044617
+==== Program initialised with values - Threads: 7 VectorLength: 100000000 ====
+
+Duration in seconds:	0.211825805
+Performance:		4.720860142606327
+==== Program initialised with values - Threads: 8 VectorLength: 100000000 ====
+
+Duration in seconds:	0.217227909
+Performance:		4.603460046195077
+==== Program initialised with values - Threads: 12 VectorLength: 100000000 ====
+
+Duration in seconds:	0.25370111
+Performance:		3.9416461362742954
+==== Program initialised with values - Threads: 16 VectorLength: 100000000 ====
+
+Duration in seconds:	0.278546826
+Performance:		3.590060652854109
+==== Program initialised with values - Threads: 20 VectorLength: 100000000 ====
+
+Duration in seconds:	0.255566306
+Performance:		3.9128788753553447
+==== Program initialised with values - Threads: 24 VectorLength: 100000000 ====
+
+Duration in seconds:	0.250841623
+Performance:		3.986579212972163
+==== Program initialised with values - Threads: 28 VectorLength: 100000000 ====
+
+Duration in seconds:	0.244955337
+Performance:		4.082376862031792
+==== Program initialised with values - Threads: 32 VectorLength: 100000000 ====
+
+Duration in seconds:	0.22238335
+Performance:		4.496739526587759

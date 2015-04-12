@@ -1,0 +1,56 @@
+==== Program initialised with values - Threads: 1 VectorLength: 10000000 ====
+
+Duration in seconds:	0.061839173
+Performance:		16.17097951811225
+==== Program initialised with values - Threads: 2 VectorLength: 10000000 ====
+
+Duration in seconds:	0.065075165
+Performance:		15.366845401006666
+==== Program initialised with values - Threads: 3 VectorLength: 10000000 ====
+
+Duration in seconds:	0.047038523
+Performance:		21.259170914018707
+==== Program initialised with values - Threads: 4 VectorLength: 10000000 ====
+
+Duration in seconds:	0.037026775
+Performance:		27.007483098379485
+==== Program initialised with values - Threads: 5 VectorLength: 10000000 ====
+
+Duration in seconds:	0.033285608
+Performance:		30.043014386277697
+==== Program initialised with values - Threads: 6 VectorLength: 10000000 ====
+
+Duration in seconds:	0.030607156
+Performance:		32.67209798911078
+==== Program initialised with values - Threads: 7 VectorLength: 10000000 ====
+
+Duration in seconds:	0.029903023
+Performance:		33.44143500140437
+==== Program initialised with values - Threads: 8 VectorLength: 10000000 ====
+
+Duration in seconds:	0.03554912
+Performance:		28.130091546569933
+==== Program initialised with values - Threads: 12 VectorLength: 10000000 ====
+
+Duration in seconds:	0.030849458
+Performance:		32.415480362734414
+==== Program initialised with values - Threads: 16 VectorLength: 10000000 ====
+
+Duration in seconds:	0.033390787
+Performance:		29.94838067159064
+==== Program initialised with values - Threads: 20 VectorLength: 10000000 ====
+
+Duration in seconds:	0.03322675
+Performance:		30.09623270407127
+==== Program initialised with values - Threads: 24 VectorLength: 10000000 ====
+
+Duration in seconds:	0.030627369
+Performance:		32.65053553898149
+==== Program initialised with values - Threads: 28 VectorLength: 10000000 ====
+
+Duration in seconds:	0.03254667
+Performance:		30.725109511971578
+==== Program initialised with values - Threads: 32 VectorLength: 10000000 ====
+
+Duration in seconds:	0.030666838
+Performance:		32.60851346982692

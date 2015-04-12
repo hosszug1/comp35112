@@ -1,0 +1,56 @@
+==== Program initialised with values - Threads: 1 VectorLength: 1000000000 ====
+
+Duration in seconds:	6.774612207
+Performance:		0.14760992503256948
+==== Program initialised with values - Threads: 2 VectorLength: 1000000000 ====
+
+Duration in seconds:	3.428053949
+Performance:		0.2917106950115854
+==== Program initialised with values - Threads: 3 VectorLength: 1000000000 ====
+
+Duration in seconds:	3.825681318
+Performance:		0.26139134885463555
+==== Program initialised with values - Threads: 4 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.569998756
+Performance:		0.3891052467108665
+==== Program initialised with values - Threads: 5 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.368063509
+Performance:		0.42228597172306664
+==== Program initialised with values - Threads: 6 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.069078201
+Performance:		0.4833070105889149
+==== Program initialised with values - Threads: 7 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.000248908
+Performance:		0.4999377807434353
+==== Program initialised with values - Threads: 8 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.375545652
+Performance:		0.420955917710143
+==== Program initialised with values - Threads: 12 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.279820015
+Performance:		0.43863111711474295
+==== Program initialised with values - Threads: 16 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.01533573
+Performance:		0.4961952418716856
+==== Program initialised with values - Threads: 20 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.357581985
+Performance:		0.42416340401413444
+==== Program initialised with values - Threads: 24 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.041885366
+Performance:		0.4897434580076226
+==== Program initialised with values - Threads: 28 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.270424535
+Performance:		0.44044626217889243
+==== Program initialised with values - Threads: 32 VectorLength: 1000000000 ====
+
+Duration in seconds:	2.168078236
+Performance:		0.46123796798262773

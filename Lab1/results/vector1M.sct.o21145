@@ -1,0 +1,56 @@
+==== Program initialised with values - Threads: 1 VectorLength: 1000000 ====
+
+Duration in seconds:	0.010946574
+Performance:		91.35278307167155
+==== Program initialised with values - Threads: 2 VectorLength: 1000000 ====
+
+Duration in seconds:	0.011789141
+Performance:		84.8238221936611
+==== Program initialised with values - Threads: 3 VectorLength: 1000000 ====
+
+Duration in seconds:	0.012604228
+Performance:		79.33845690509565
+==== Program initialised with values - Threads: 4 VectorLength: 1000000 ====
+
+Duration in seconds:	0.012425475
+Performance:		80.4798206909595
+==== Program initialised with values - Threads: 5 VectorLength: 1000000 ====
+
+Duration in seconds:	0.012500288
+Performance:		79.99815684246634
+==== Program initialised with values - Threads: 6 VectorLength: 1000000 ====
+
+Duration in seconds:	0.012118221
+Performance:		82.52036334376143
+==== Program initialised with values - Threads: 7 VectorLength: 1000000 ====
+
+Duration in seconds:	0.011779823
+Performance:		84.89091898919024
+==== Program initialised with values - Threads: 8 VectorLength: 1000000 ====
+
+Duration in seconds:	0.011678847
+Performance:		85.62489088177969
+==== Program initialised with values - Threads: 12 VectorLength: 1000000 ====
+
+Duration in seconds:	0.014000703
+Performance:		71.42498487397383
+==== Program initialised with values - Threads: 16 VectorLength: 1000000 ====
+
+Duration in seconds:	0.014087692
+Performance:		70.98394825781256
+==== Program initialised with values - Threads: 20 VectorLength: 1000000 ====
+
+Duration in seconds:	0.014290007
+Performance:		69.9789720186981
+==== Program initialised with values - Threads: 24 VectorLength: 1000000 ====
+
+Duration in seconds:	0.016986786
+Performance:		58.869288163164
+==== Program initialised with values - Threads: 28 VectorLength: 1000000 ====
+
+Duration in seconds:	0.016019959
+Performance:		62.42213229134981
+==== Program initialised with values - Threads: 32 VectorLength: 1000000 ====
+
+Duration in seconds:	0.015503197
+Performance:		64.50282480445807
