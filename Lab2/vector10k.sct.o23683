@@ -1,0 +1,30 @@
+==== Program initialised with values - Threads: 1 VectorLength: 10000 ====
+
+Duration in seconds:	0.006060189
+Performance:		165.01135525641197
+=======================================================================================
+==== Program initialised with values - Threads: 2 VectorLength: 10000 ====
+
+Duration in seconds:	0.011311864
+Performance:		88.4027601463384
+=======================================================================================
+==== Program initialised with values - Threads: 4 VectorLength: 10000 ====
+
+Duration in seconds:	0.011904586
+Performance:		84.00124120234001
+=======================================================================================
+==== Program initialised with values - Threads: 8 VectorLength: 10000 ====
+
+Duration in seconds:	0.014907649
+Performance:		67.07965823450766
+=======================================================================================
+==== Program initialised with values - Threads: 16 VectorLength: 10000 ====
+
+Duration in seconds:	0.016658494
+Performance:		60.029436034253756
+=======================================================================================
+==== Program initialised with values - Threads: 32 VectorLength: 10000 ====
+
+Duration in seconds:	0.031866148
+Performance:		31.381263904253508
+=======================================================================================

@@ -21,6 +21,9 @@ public class TestMergeSort
             vectorLength = Integer.parseInt(args[1]);
         } // else
 
+        System.out.println("==== Program initialised with values - Threads: "
+            + threadNumber + " VectorLength: " + vectorLength + " ====\n");
+
         int[] testArray = new int[vectorLength];
         // Random generator = new Random();
 
@@ -47,8 +50,6 @@ public class TestMergeSort
 	        } // else
 	    } // for
 
-        // printVector(testArray, "Initial Test Array");
-
 		// Get the starting time of the additions in nanoseconds.
         long startTime = System.nanoTime();
         // Do the sorting.
@@ -68,6 +69,7 @@ public class TestMergeSort
         // Print duration and performance.
         System.out.println("Duration in seconds:\t" + durationInSecond);
         System.out.println("Performance:\t\t" + performance);
+        System.out.println("=======================================================================================");
 	} // main
 
 	// Helper method for printing out vector contents.

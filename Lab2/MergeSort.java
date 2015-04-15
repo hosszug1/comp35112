@@ -48,10 +48,10 @@ public class MergeSort implements Runnable
 		else
 		{
 			// Use java built-in function for sorting the remaining elements.
-			result = new int[end - start];
-			for (int i = start; i < end; i++)
-
-			java.util.Arrays.sort(inArray);
+			result = new int[end - start + 1];
+			System.arraycopy(inArray, start, result, 0, (end - start + 1));;
+			java.util.Arrays.sort(result);
+			// java.util.Arrays.sort(inArray, start, (end + 1));
 		} // else
 
 		return result;
