@@ -3,6 +3,8 @@ import java.lang.Thread;
 
 public class MergeSort implements Runnable
 {	
+	public int[] result;
+
 	// Constructor. Does nothing.
 	public MergeSort()
 	{
@@ -14,10 +16,10 @@ public class MergeSort implements Runnable
 	} // run
 
 	// 
-	public int[] inPlaceSort(int[] inArray, int start, int end, int threadNo)
+	public void inPlaceSort(int[] inArray, int start, int end, int threadNo)
 	{
 		// Final resulting sorted array (or piece of array).
-		int[] result;
+		// int[] result;
 
 		// Check how many threads are left to be used.
 		if (threadNo > 1)
@@ -26,10 +28,10 @@ public class MergeSort implements Runnable
             MergeSort newSort = new MergeSort();
             Thread newThread = new Thread(newSort);
             newThread.start(); 
-			int[] firstHalf = newSort.inPlaceSort(inArray, start, (start + end) / 2, threadNo / 2);
+			newSort.inPlaceSort(inArray, start, (start + end) / 2, threadNo / 2);
 
-			// Second half. Sort in the same thread
-			int[] secondHalf = this.inPlaceSort(inArray, (start + end) / 2 + 1, end, threadNo / 2);
+			// Second half. Sort in the same thread.
+			this.inPlaceSort(inArray, (start + end) / 2 + 1, end, threadNo / 2);
 
 			// Join threads.
             try
@@ -42,27 +44,26 @@ public class MergeSort implements Runnable
             } // catch
 
 	        // Concatenate results.
-            result = merge(firstHalf, secondHalf);
-
+            this.result = merge(newSort.result, this.result);
 		} // if
 		else
 		{
 			// Use java built-in function for sorting the remaining elements.
-			result = new int[end - start + 1];
-			System.arraycopy(inArray, start, result, 0, (end - start + 1));;
-			java.util.Arrays.sort(result);
+			this.result = new int[end - start + 1];
+			System.arraycopy(inArray, start, this.result, 0, (end - start + 1));;
+			java.util.Arrays.sort(this.result);
 			// java.util.Arrays.sort(inArray, start, (end + 1));
 		} // else
 
-		return result;
+		// return result;
 
 	} // inPlaceSort
 
 	// A function that merges two sorted arrays into one (also sorted).
-	public int[] merge(int[] left, int[] right)
+	public static int[] merge(int[] left, int[] right)
 	{
 		// The resulting array.
-		int[] result = new int[left.length + right.length];
+		int[] mergedArray = new int[left.length + right.length];
 
 		// Initialise indexes for the left, right and resulting arrays.
 		int i = 0, j = 0, k = 0;
@@ -76,7 +77,7 @@ public class MergeSort implements Runnable
 			if (left[i] <= right[j])
 			{
 				// Place element in result array.
-				result[k] = left[i];
+				mergedArray[k] = left[i];
 				// Increment the index of this array (left) so that next time
 				// the next element gets compared to the one in the other
 				// array.
@@ -85,7 +86,7 @@ public class MergeSort implements Runnable
 			else
 			{
 				// Place element in result array.
-				result[k] = right[j];
+				mergedArray[k] = right[j];
 				// Increment the index of this array (right) so that next time
 				// the next element gets compared to the one in the other
 				// array.
@@ -99,19 +100,19 @@ public class MergeSort implements Runnable
 		// Either arrays may have elements left in them.
 		while (i < left.length)
 		{
-			result[k] = left[i];
+			mergedArray[k] = left[i];
 			i++;
 			k++;
 		} // while
 
 		while (j < right.length)
 		{
-			result[k] = right[j];
+			mergedArray[k] = right[j];
 			j++;
 			k++;
 		} // while
 
-		return result;
+		return mergedArray;
 	} // merge
 
 } // class MergeSort

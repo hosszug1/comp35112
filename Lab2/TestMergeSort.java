@@ -54,7 +54,7 @@ public class TestMergeSort
         long startTime = System.nanoTime();
         // Do the sorting.
 		MergeSort newMergeSorting = new MergeSort();
-        int[] sortedTestArray = newMergeSorting.inPlaceSort(testArray, 0, testArray.length - 1, threadNumber);
+        newMergeSorting.inPlaceSort(testArray, 0, testArray.length - 1, threadNumber);
         // Compute the duration of the addition.
         long duration = System.nanoTime() - startTime;
 		// Transform into seconds.
@@ -64,7 +64,7 @@ public class TestMergeSort
 
 		// To print results of addition, uncomment following lines.
         // printVector(testArray, "Initial Test Array");
-        // printVector(sortedTestArray, "Sorted Test Array");
+        // printVector(newMergeSorting.result, "Sorted Test Array");
 
         // Print duration and performance.
         System.out.println("Duration in seconds:\t" + durationInSecond);
