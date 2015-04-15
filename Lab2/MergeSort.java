@@ -1,17 +1,16 @@
 import java.util.Arrays.*;
+import java.lang.Thread;
 
 public class MergeSort implements Runnable
 {	
-	// Constructor.
+	// Constructor. Does nothing.
 	public MergeSort()
 	{
-
 	} // MergeSort
 
-	//
+	// Does nothing.
 	public void run()
 	{
-
 	} // run
 
 	// 
@@ -23,50 +22,96 @@ public class MergeSort implements Runnable
 		// Check how many threads are left to be used.
 		if (threadNo > 1)
 		{
-			Thread[] mergeSortThreads = new Thread[2];
 			// First half. Spawn a new thread.
-            MergeSort newSort1 = new MergeSort();
-            mergeSortThreads[0] = new Thread(newSort1);
-            mergeSortThreads[0].start(); 
-			result1 = newSort1.inPlaceSort(inArray, start, (start + end) / 2, threadNo / 2);
+            MergeSort newSort = new MergeSort();
+            Thread newThread = new Thread(newSort);
+            newThread.start(); 
+			int[] firstHalf = newSort.inPlaceSort(inArray, start, (start + end) / 2, threadNo / 2);
 
-			// Create a new Runnable object 'VectorAdder' for the specified index range and start it.
-            VectorAdder newAdder = new VectorAdder(firstVector, secondVector, resultsVector, leftIndex, rightIndex);
-            adderThreads[i] = new Thread(newAdder);
-            adderThreads[i].start();
-
-			// Second half. Spawn a new thread.
-            MergeSort newSort2 = new MergeSort();
-            mergeSortThreads[1] = new Thread(newSort2);
-            mergeSortThreads[1].start(); 
-			result2 = newSort2.inPlaceSort(inArray, (start + end) / 2 + 1, end, threadNo / 2);
+			// Second half. Sort in the same thread
+			int[] secondHalf = this.inPlaceSort(inArray, (start + end) / 2 + 1, end, threadNo / 2);
 
 			// Join threads.
-	        for (int i = 0; i < 2; i++)
-	            try
-	            {
-	                mergeSortThreads[i].join();
-	            } // try
-	            catch (InterruptedException e)
-	            {
-	                e.printStackTrace();
-	            } // catch
+            try
+            {
+                newThread.join();
+            } // try
+            catch (InterruptedException e)
+            {
+                e.printStackTrace();
+            } // catch
 
 	        // Concatenate results.
+            result = merge(firstHalf, secondHalf);
+
 		} // if
 		else
 		{
+			// Use java built-in function for sorting the remaining elements.
+			result = new int[end - start];
+			for (int i = start; i < end; i++)
 
+			java.util.Arrays.sort(inArray);
 		} // else
 
 		return result;
 
 	} // inPlaceSort
 
-	//
-	public static void main(String[] args)
+	// A function that merges two sorted arrays into one (also sorted).
+	public int[] merge(int[] left, int[] right)
 	{
-		
-	} // main
+		// The resulting array.
+		int[] result = new int[left.length + right.length];
+
+		// Initialise indexes for the left, right and resulting arrays.
+		int i = 0, j = 0, k = 0;
+
+		// Loop through the elements of the two arrays and compare two at a time
+		// (one from each array) to see which one is less than or equal and put
+		// that in the resulting array (this is possible because we know that
+		// the two arrays are already sorted in ascending order).
+		while (i < left.length && j < right.length)
+		{
+			if (left[i] <= right[j])
+			{
+				// Place element in result array.
+				result[k] = left[i];
+				// Increment the index of this array (left) so that next time
+				// the next element gets compared to the one in the other
+				// array.
+				i++;
+			} // if
+			else
+			{
+				// Place element in result array.
+				result[k] = right[j];
+				// Increment the index of this array (right) so that next time
+				// the next element gets compared to the one in the other
+				// array.
+				j++;
+			} // else
+
+			// Increment the index for the resulting array.
+			k++;
+		} // while
+
+		// Either arrays may have elements left in them.
+		while (i < left.length)
+		{
+			result[k] = left[i];
+			i++;
+			k++;
+		} // while
+
+		while (j < right.length)
+		{
+			result[k] = right[j];
+			j++;
+			k++;
+		} // while
+
+		return result;
+	} // merge
 
 } // class MergeSort
