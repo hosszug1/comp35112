@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class TestMergeSort
 {
     // Specify the maximum possible value for a randomly generated int.
@@ -25,14 +23,6 @@ public class TestMergeSort
             + threadNumber + " VectorLength: " + vectorLength + " ====\n");
 
         int[] testArray = new int[vectorLength];
-        // Random generator = new Random();
-
-        // Randomise vector values.
-        // for (int i = 0; i < vectorLength; i++)
-        // {
-        //     testArray[i] = generator.nextInt(maxValue);
-        // } // for
-
         // Instead of randomising the array values, create the "worst case" scenario
         // for merge-sorting.
         int p = 1, q = (vectorLength / 2);
