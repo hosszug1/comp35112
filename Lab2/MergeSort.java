@@ -18,7 +18,7 @@ public class MergeSort implements Runnable
 		// Initialise ID.
 		this.threadID = threadCounter;
 		threadCounter++;
-		System.out.println("Thread created with ID " + this.threadID);
+		// System.out.println("Thread created with ID " + this.threadID);
 
 		// Setup variables to be used in sorting.
 		this.array = array;
@@ -33,13 +33,13 @@ public class MergeSort implements Runnable
 		// Initialise ID.
 		this.threadID = threadCounter;
 		threadCounter++;
-		System.out.println("Thread created with ID " + this.threadID);
+		// System.out.println("Thread created with ID " + this.threadID);
 	} // MergeSort
 
 	// Calls the sorting function.
 	public void run()
 	{
-		System.out.println("run started in thread " + this.threadID);
+		// System.out.println("run started in thread " + this.threadID);
 		this.inPlaceSort(this.array, this.start, this.end, this.numberOfThreads);
 	} // run
 
@@ -49,19 +49,19 @@ public class MergeSort implements Runnable
 		// Final resulting sorted array (or piece of array).
 		// int[] result;
 
-		System.out.println("inPlaceSort started in thread " + this.threadID);
+		// System.out.println("inPlaceSort started in thread " + this.threadID);
 
 		// Check how many threads are left to be used.
 		if (threadNo > 1)
 		{
 			// First half. Spawn a new thread.
-			System.out.println("Spawning a new thread here...");
+			// System.out.println("Spawning a new thread here...");
             MergeSort newSort = new MergeSort(inArray, start, (start + end) / 2, threadNo / 2);
             Thread newThread = new Thread(newSort);
             newThread.start();
 			// newSort.inPlaceSort(inArray, start, (start + end) / 2, threadNo / 2);
 
-			System.out.println("Continuing activity in thread " + this.threadID);
+			// System.out.println("Continuing activity in thread " + this.threadID);
 
 			// Second half. Sort in the same thread.
 			this.inPlaceSort(inArray, (start + end) / 2 + 1, end, threadNo / 2);
