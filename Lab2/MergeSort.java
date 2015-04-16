@@ -3,16 +3,21 @@ import java.lang.Thread;
 
 public class MergeSort implements Runnable
 {	
+	// Variable for resulting sorted array.
+	// Public because used many times in the algorithm, making
+	// access easier.
 	public int[] result;
+	// The array, start index, end index and total number of threads.
 	private int[] array;
 	private int start;
 	private int end;
 	private int numberOfThreads;
-	// Keep track of threads
+	// Keep track of threads.
 	private static int threadCounter = 0;
 	private final int threadID;
 
-	// Constructor. Does nothing.
+	// Main Constructor. Initialises thread ID and takes the variables
+	// needed for sorting as parameter (so run() method can access them).
 	public MergeSort(int[] array, int start, int end, int numberOfThreads)
 	{
 		// Initialise ID.
@@ -27,7 +32,7 @@ public class MergeSort implements Runnable
 		this.numberOfThreads = numberOfThreads;
 	} // MergeSort
 
-	// Constructor. Does nothing.
+	// Secondary Constructor. Initialises thread ID but doesn't take extra parameters.
 	public MergeSort()
 	{
 		// Initialise ID.
@@ -36,7 +41,7 @@ public class MergeSort implements Runnable
 		// System.out.println("Thread created with ID " + this.threadID);
 	} // MergeSort
 
-	// Calls the sorting function.
+	// Calls the sorting function using the variables kept in this class.
 	public void run()
 	{
 		// System.out.println("run started in thread " + this.threadID);
@@ -58,15 +63,16 @@ public class MergeSort implements Runnable
 			// System.out.println("Spawning a new thread here...");
             MergeSort newSort = new MergeSort(inArray, start, (start + end) / 2, threadNo / 2);
             Thread newThread = new Thread(newSort);
+            // Start the thread, when run() is called, it will take the
+            // parameters for sorting from the class created just above.
             newThread.start();
-			// newSort.inPlaceSort(inArray, start, (start + end) / 2, threadNo / 2);
 
 			// System.out.println("Continuing activity in thread " + this.threadID);
 
 			// Second half. Sort in the same thread.
 			this.inPlaceSort(inArray, (start + end) / 2 + 1, end, threadNo / 2);
 
-			// Join threads.
+			// Wait for first half to finish.
             try
             {
                 newThread.join();
@@ -77,7 +83,7 @@ public class MergeSort implements Runnable
             } // catch
 
 	        // Concatenate results.
-            this.result = merge(newSort.result, this.result);
+            this.result = this.merge(newSort.result, this.result);
 		} // if
 		else
 		{
@@ -93,7 +99,7 @@ public class MergeSort implements Runnable
 	} // inPlaceSort
 
 	// A function that merges two sorted arrays into one (also sorted).
-	public static int[] merge(int[] left, int[] right)
+	public int[] merge(int[] left, int[] right)
 	{
 		// The resulting array.
 		int[] mergedArray = new int[left.length + right.length];
